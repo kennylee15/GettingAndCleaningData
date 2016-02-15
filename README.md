@@ -43,19 +43,19 @@ Data set: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20H
 Analysis Script
 ---------------
 
-`run_analysis.R`: this script takes the input data, and creates the output file 
+run_analysis.R
 
-The script first downloads and unzips the dataset from the above url. The script then reads the test and training sets, merges them (1).  It filters down the mean and std features, and selects only these (2) It merges in the activity names for the activities (3) It then builds up a series of labeled columns to represent single variables from the feature. (4)  It calculates the average of each variable and writes out this data set to `tidy.txt` (5)
+The script first downloads and unzips the dataset from the above url. It reads the test and training sets, and merges them. It subsets the mean and standard deviation values of the features. After renaming the variable names, the script  calculates the average of each variable and writes out this data set to `tidydata.txt`.
 
 
 Output
 ------
 
-* Tidy dataset: `tidy.txt`
+* Tidy dataset: `tidydata.txt`
 
 
 Code Book
 ---------
 
-`CodeBook.md`: describes the variables, the data, and any transformations or work that you performed to clean up the data
+`Codebook.md`: describes the variables, the data, and any transformations or work that are performed to clean up the data.
 
