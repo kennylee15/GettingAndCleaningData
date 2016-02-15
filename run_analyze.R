@@ -57,7 +57,6 @@ names(data) <- gsub('-','',names(data))
 names(data) <- gsub("Mag", "Magnitude", names(data))
 names(data) <- gsub("BodyBody", "Body", names(data))
 
-# use plyr to find the average of each variables
 output_data <- aggregate(. ~subject + activity, data, mean)
 output_data <- output_data[order(output_data$subject, output_data$activity),]
 str(output_data)
