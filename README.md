@@ -1,6 +1,8 @@
 Getting and Cleaning Data Project
 =================================
 
+The following project is to satisfy the requirement for Getting and Cleaning Data course provided by Coursera and Johns Hopkins University. I have written `run_analyze.R` to automatically collect and cleanse data from the source. The script then saves the output dataset into a new `txt` file.
+
 Criteria
 --------
 
